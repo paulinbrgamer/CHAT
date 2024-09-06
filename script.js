@@ -18,3 +18,9 @@ function criarMsg(){
     document.getElementById('campo').value = ''
    return balao
 }
+document.getElementById('campo').addEventListener('keydown',function(event){
+    if (event.key === 'Enter'){
+        event.preventDefault();
+        mandarmsg()
+    }
+})
